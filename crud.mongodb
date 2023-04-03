@@ -20,4 +20,8 @@ db.sales.aggregate([
         storeLocation: "$_id"
       }
     }
-  ]);
+  ])
+;
+
+use('sample_supplies');
+db.sales.find({ storeLocation: { $in: ["London", "New York"]} }).count();
