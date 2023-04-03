@@ -1,0 +1,4 @@
+db.accounts.insertOne({account_id:111333, limit:12000, products: ["Commodity", "Brokerage"], "last_updated": new Date()});
+db.accounts.findOne({_id: ObjectId("642a147bc96de5b45a906077")});
+use('sample_supplies');
+db.sales.find({_id: ObjectId("5bd761dcae323e45a93ccff4")});
